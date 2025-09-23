@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuerpo vivo</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ page.title }}</title>
+        <!-- favicon -->
+        <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
+        <!-- Open Graph Metadata -->
+        <meta property="og:title" content="Semantic HTML - Starter Markup">
+        <meta property="og:description" content="Un documento de inicio para crear páginas HTML semánticas con buenas prácticas. Incluye ejemplos y referencias.">
+        <meta property="og:url" content="https://juanfuent-es.github.io/centro-template/">
+        <meta property="og:type" content="website">
+        <!-- css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
 <body>
     <header class="container" id="main-header">
         <nav>
@@ -18,8 +28,13 @@
       <main class="container">
         <h1>Cuerpo vivo</h1>
       </main>
-  <footer>
-    <p> Derechos reservados</p>
-  </footer>
+      <footer class="container" id="main-footer">
+        <nav class="text-center">
+          <p>
+            <a href="{{ '/guia.html' | relative_url }}" title="Guía de Inicio">CENTRO 2025</a> | 
+            <a href="https://github.com/juanfuent-es/centro.html-layout" title="Ver en GitHub">Ver en GitHub</a>
+          </p>
+        </nav>
+      </footer>
 </body>
 </html>
