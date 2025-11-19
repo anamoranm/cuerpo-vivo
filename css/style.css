@@ -1,9 +1,15 @@
 :root {
     --font-base: "filosofia-grand-all-small-ca", serif;
     --color-text: #FFF;
-    --color-bg: #000;
+    --color-bg: #ada89a;
 }
-
+/* Fondo específico solo para la página de inicio */
+.pagina-inicio {
+    background-image: url('../img/tu-imagen-de-fondo.jpg'); /* Cambia por tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /* Estilos default */
 body {
     font-family: var(--font-base);
