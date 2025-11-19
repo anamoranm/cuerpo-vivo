@@ -4,11 +4,13 @@
     --color-bg: #ada89a;
 }
 /* Fondo específico solo para la página de inicio */
-.pagina-inicio {
-    background-image: url('../img/tu-imagen-de-fondo.jpg'); /* Cambia por tu imagen */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+body.pagina-inicio {
+    background: url('../img/b1.jpg') center/cover no-repeat fixed !important;
+    background-color: transparent !important;
+    min-height: 100vh;
+}
+.container {
+    padding-top: 70px; 
 }
 /* Estilos default */
 body {
@@ -17,6 +19,31 @@ body {
     background: var(--color-bg);
     padding: 0;
     margin: 0;
+}
+
+#button-section {
+    width:88%;
+    position: relative;
+    padding-top:10px;
+}
+
+.nav-link-btn {
+    width: 40%;
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+.nav-link-btn:nth-child(1) {
+    left: 0;
+}
+
+.nav-link-btn:nth-child(2) {
+    left: 35%;
+}
+
+.nav-link-btn:nth-child(3) {
+    left:70%;
 }
 
 a {
@@ -30,8 +57,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-family: "r41-alfabeta-72", sans-serif;
-    font-size: 200px;
+    font-family:"filosofia-grand-all-small-ca", serif;
+    font-size: 400px;
 }
 
 h2 {
@@ -82,13 +109,19 @@ footer#main-footer {
     flex-direction: column;
 }
 
-.nav-link {
-    color: var(--color-text);
-    text-decoration: none;
-    padding: 0.25em 0.5em;
-    font-weight: 100;
-    text-transform: uppercase;
-    width: 100px;
+header#main-header nav a.nav-link,
+header#main-header nav a.nav-link:link,
+header#main-header nav a.nav-link:visited,
+header#main-header nav a.nav-link:hover,
+header#main-header nav a.nav-link:active,
+header#main-header nav a.nav-link:focus {
+    color: var(--color-text) !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+    border: none !important;
+    outline: none !important;
+    font-size: 25px;
+    padding-right: 20px;
 }
 
 .button {
