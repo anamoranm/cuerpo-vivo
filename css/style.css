@@ -14,7 +14,7 @@ body.pagina-inicio {
 }
 /* Estilos default */
 body {
-    font-family: "minion-pro", serif ;
+    font-family: "minion-pro", serif;
     color: var(--color-text);
     background: var(--color-bg);
     padding: 0;
@@ -89,14 +89,6 @@ header#main-header nav {
     align-items: center;
     padding: 1em 0;
 }
-
-footer#main-footer {
-    border-top: 1px solid var(--color-text);
-    margin-top: 2em;
-    text-align: center;
-    padding: 2em 0 1em 0;
-}
-
 /* Components */
 
 .hero {
@@ -259,4 +251,98 @@ section h3 {
 section h4 {
     color: rgba(255, 255, 255, 0.9);
     font-weight: 600;
+}
+
+#main-footer {
+    background-color: #666240;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    width: 100%; /* Asegurar que ocupe todo el ancho */
+}
+
+.footer-left {
+    text-align: left;
+    flex: 1;
+    margin-left: -5%; /* Empuja hacia la izquierda */
+}
+
+.footer-center {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.footer-right {
+    text-align: right;
+    flex: 1;
+    margin-right: -5%; /* Empuja hacia la derecha */
+}
+
+.footer-logo {
+    width: 60px;
+    height: 60px;
+}
+
+.footer-title {
+    font-size: 25px;
+    font-family: "filosofia-grand-all-small-ca", serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+
+.footer-info {
+    font-size: 15px;
+    opacity: 0.9;
+    margin: 0;
+    font-family: "minion-pro", serif;
+    margin-top: 0px;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+    font-family: "minion-pro", serif;
+}
+
+.footer-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* Para que ocupe todo el ancho */
+#main-footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Responsive para el footer */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .footer-left, .footer-right {
+        text-align: center;
+        margin-left: 0; /* Reset en móvil */
+        margin-right: 0; /* Reset en móvil */
+    }
+    
+    .footer-logo {
+        order: -1;
+    }
 }
