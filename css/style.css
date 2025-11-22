@@ -63,7 +63,7 @@ h1 {
 
 h2 {
     font-family:"filosofia-grand-all-small-ca", serif;
-    font-size: 200px;
+    font-size: 300px;
 }
 
 h3 {
@@ -94,7 +94,6 @@ header#main-header nav {
 .hero {
     font-family:"filosofia-grand-all-small-ca", serif;
     text-align: center;
-    padding: 1em 0;
     min-height: 50vh;
     display: flex;
     align-items: center;
@@ -103,10 +102,18 @@ header#main-header nav {
     font-size: 60px;
 }
 
+.cv {
+    font-size: 70px;
+    font-family:"filosofia-grand-all-small-ca", serif;
+}
+
 .hero-image-container {
-    margin-top: 230px;
-    margin-bottom: 400px;
     text-align: center; 
+    margin-bottom: 200px;
+}
+
+.subtit{
+    font-size: 50px;
 }
 
 .introtext {
