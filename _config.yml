@@ -1,9 +1,0 @@
-# Configuración básica para Jekyll
-title: "Cuerpo vivo"
-description: "Corporalidad y movimiento como resistencia a las dinámicas y producción post pandémicas"
-baseurl: "/centro.html-layout"
-url: "https://juanfuent-es.github.io"
-
-# Configuración básica de Jekyll
-markdown: kramdown
-highlighter: rouge
