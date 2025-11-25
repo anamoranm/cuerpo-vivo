@@ -3,15 +3,18 @@
     --color-text: #FFF;
     --color-bg: #ada89a;
 }
+
 /* Fondo específico solo para la página de inicio */
 body.pagina-inicio {
     background: url('../img/b1.jpg') center/cover no-repeat fixed !important;
     background-color: transparent !important;
     min-height: 100vh;
 }
+
 .container {
     padding-top: 70px; 
 }
+
 /* Estilos default */
 body {
     font-family: "minion-pro", serif;
@@ -71,7 +74,6 @@ h3 {
     font-size: 1.5rem;
 }
 
-
 code {
     background: var(--color-bg);
 }
@@ -80,8 +82,8 @@ img {
     max-width: 100%;
     height: auto;
 }
-/* layout */
 
+/* layout */
 header#main-header nav {
     text-align: center;
     display: flex;
@@ -89,8 +91,15 @@ header#main-header nav {
     align-items: center;
     padding: 1em 0;
 }
-/* Components */
 
+/* HEADER CORREGIDO - position relative por defecto */
+#main-header {
+    position: relative;
+    z-index: 10;
+    background: transparent;
+}
+
+/* Components */
 .hero {
     font-family:"filosofia-grand-all-small-ca", serif;
     text-align: center;
@@ -107,9 +116,17 @@ header#main-header nav {
     font-family:"filosofia-grand-all-small-ca", serif;
 }
 
+/* HERO IMAGE CONTAINER CORREGIDO - solo una regla */
 .hero-image-container {
-    text-align: center; 
-    margin-bottom: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero-image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .subtit{
@@ -119,9 +136,9 @@ header#main-header nav {
 .introtext {
     font-family: "minion-pro", serif;
     font-size: 15px;
-    line-height: 1.6; /* Esto arreglará el interlineado */
-    margin-bottom: 1.5rem; /* Espacio adicional abajo */
-    display: block; /* Asegura que se comporte como bloque */
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    display: block;
 }
 
 header#main-header nav a.nav-link,
@@ -138,7 +155,6 @@ header#main-header nav a.nav-link:focus {
     font-size: 25px;
     padding-right: 20px;
     font-family:"filosofia-grand-all-small-ca", serif;
-
 }
 
 .button {
@@ -146,6 +162,7 @@ header#main-header nav a.nav-link:focus {
     color: var(--color-bg);
     border-radius: 0;
 }
+
 .button:hover {
     background-color: var(--color-bg);
     color: var(--color-text);
@@ -273,13 +290,13 @@ section h4 {
     justify-content: space-between;
     align-items: center;
     min-height: 80px;
-    width: 100%; /* Asegurar que ocupe todo el ancho */
+    width: 100%;
 }
 
 .footer-left {
     text-align: left;
     flex: 1;
-    margin-left: -5%; /* Empuja hacia la izquierda */
+    margin-left: -5%;
 }
 
 .footer-center {
@@ -290,7 +307,7 @@ section h4 {
 .footer-right {
     text-align: right;
     flex: 1;
-    margin-right: -5%; /* Empuja hacia la derecha */
+    margin-right: -5%;
 }
 
 .footer-logo {
@@ -345,11 +362,503 @@ section h4 {
     
     .footer-left, .footer-right {
         text-align: center;
-        margin-left: 0; /* Reset en móvil */
-        margin-right: 0; /* Reset en móvil */
+        margin-left: 0;
+        margin-right: 0;
     }
     
     .footer-logo {
         order: -1;
+    }
+}
+
+/* Galería de imágenes grande testimonios */
+.galeria-imagenes {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.imagen-full {
+    width: 100%;
+    margin: 100px 0;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    min-height: 75vh;
+}
+
+.imagen-full.espacios {
+    margin: 120px 0;
+}
+
+.imagen-full.planos {
+    margin: 110px 0;
+}
+
+.imagen-full.acetat {
+    margin: 130px 0;
+}
+
+.imagen-full.tar1 {
+    margin: 100px 0;
+}
+
+.imagen-full.tar2 {
+    margin: 105px 0;
+}
+
+.imagen-full.tar3 {
+    margin:0px;
+}
+
+.imagen-full img {
+    max-width: 82%;
+    max-height: 82vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .imagen-full {
+        min-height: 60vh;
+        margin: 70px 0;
+        padding: 35px 0;
+    }
+    
+    .imagen-full img {
+        max-width: 88%;
+    }
+    
+    .imagen-full.espacios,
+    .imagen-full.planos,
+    .imagen-full.acetat,
+    .imagen-full.tar1,
+    .imagen-full.tar2,
+    .imagen-full.tar3,
+    .imagen-full.tar4 {
+        margin: 60px 0;
+    }
+}
+
+/* Para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .imagen-full {
+        min-height: 50vh;
+        margin: 50px 0;
+        padding: 25px 0;
+    }
+    
+    .imagen-full img {
+        max-width: 92%;
+    }
+    
+    .imagen-full.espacios,
+    .imagen-full.planos,
+    .imagen-full.acetat,
+    .imagen-full.tar1,
+    .imagen-full.tar2,
+    .imagen-full.tar3,
+    .imagen-full.tar4 {
+        margin: 40px 0;
+    }
+}
+
+/* Estilos para la sección con imágenes laterales */
+.contenido-con-imagenes {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 50px auto;
+    padding: 0 20px;
+    gap: 40px;
+}
+
+.imagen-izquierda, .imagen-derecha {
+    flex: 0 0 300px;
+    display: block;
+}
+
+.imagen-izquierda img, .imagen-derecha img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contenido-central {
+    flex: 1;
+    max-width: 800px;
+}
+
+.titulo-principal {
+    font-family: "filosofia-grand-all-small-ca", serif;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.subtitulo-principal {
+    font-family: "filosofia-grand-all-small-ca", serif;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: normal;
+    line-height: 1.3;
+}
+
+.parrafos {
+    margin-bottom: 40px;
+}
+
+.introtext {
+    font-family: "minion-pro", serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* ============================================= */
+/* TALLERES HEADER FIJO & IMAGEN COMPLETA */
+/* ============================================= */
+
+body.pagina-reconoce {
+    background: #ada89a;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* HEADER COMPLETAMENTE FIJO */
+body.pagina-reconoce #main-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+    background: transparent !important;
+    padding: 1rem 0 !important;
+    margin: 0 !important;
+}
+
+/* Asegurar que los enlaces del header sean visibles */
+body.pagina-reconoce #main-header nav a.nav-link {
+    color: white !important;
+}
+
+/* CONTENEDOR DE IMAGEN - OCUPA TODA LA PANTALLA DEBAJO DEL HEADER */
+.hero-fixed-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-fixed-bg {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-fixed-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* LOGO CENTRADO - OCUPANDO BUENA PARTE DE LA PANTALLA */
+.hero-fixed-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-logo-main {
+    max-width: 70%;
+    max-height: 70%;
+    width: auto;
+    height: auto;
+}
+
+/* CONTENIDO PRINCIPAL - EMPIEZA DESPUÉS DE LA IMAGEN */
+.main-content-scroll {
+    position: relative;
+    background: #ada89a;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTILOS PARA EL CONTENIDO DEL TALLER */
+.content-scroll-section {
+    background: #ada89a;
+    padding: 3rem 0; /* SIN PADDING LATERAL */
+    color: #ffffff;
+    margin: 0;
+    font-family: "minion-pro", serif;
+    line-height: 1.4;
+}
+
+/* CONTENEDOR SIN PADDING LATERAL */
+.content-scroll-section .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+/* LAYOUT DE DOS COLUMNAS - COLUMNA DERECHA PEGADA AL BORDE */
+.content-columns {
+    display: flex;
+    justify-content: space-between; /* DISTRIBUYE EL ESPACIO */
+    align-items: flex-start;
+    width: 100%; /* OCUPA TODO EL ANCHO */
+    margin: 0;
+    padding: 0;
+}
+
+.left-column {
+    margin-top: 100px;
+    flex: 1;
+    min-width: 0;
+    margin-left: 100px;
+    max-width: 800px;
+}
+
+.right-column {
+    flex: 0 0 500px;
+    margin-right: 0; /* PEGADA AL BORDE DERECHO */
+    padding-right: 100px; /* MARGEN INTERNO PARA EL CONTENIDO */
+}
+
+/* ===== COLUMNA IZQUIERDA - TALLER Y DESCRIPCIÓN ===== */
+
+/* Título principal */
+.left-column .taller-title {
+    text-align: left;
+    font-family: "filosofia-grand-all-small-ca", serif;
+    font-size: 70pt;
+    font-weight: normal;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    line-height: 0.9;
+}
+
+/* Subtítulo */
+.left-column .taller-subtitle {
+    text-align: left;
+    font-family:"minion-pro", serif;
+    font-size: 25pt; 
+    font-style: italic;
+    color: #ffffff;
+    font-weight: normal;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+/* Descripción del taller */
+.left-column .taller-description {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.left-column .taller-description p {
+    font-size: 13pt;
+    line-height: 1.3;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+/* ===== COLUMNA DERECHA - INFORMACIÓN DEL TALLER ===== */
+
+.right-column .info-section {
+    max-width: none;
+    margin: 0;
+}
+
+.right-column .info-item {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.right-column .info-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Títulos de sección */
+.right-column .info-item h3 {
+    font-family: "filosofia-grand-all-small-ca", serif;
+    font-weight: normal;
+    font-size: 20pt;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+/* Texto normal */
+.right-column .info-item p {
+    font-size: 12pt; 
+    margin: 0;
+    color: #f0f0f0;
+    line-height: 1.3;
+    font-weight: normal;
+}
+
+/* Listas */
+.right-column .info-item ul, 
+.right-column .info-item ol {
+    margin: 1rem 0 0 2rem;
+    padding: 0;
+    color: #f0f0f0;
+}
+
+.right-column .info-item li {
+    font-size: 12pt;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    font-weight: normal;
+}
+
+.right-column .info-item ul li {
+    list-style-type: disc;
+}
+
+.right-column .info-item ol li {
+    list-style-type: decimal;
+}
+
+/* IMAGEN EXTENDIDA - OCUPA TODO EL ANCHO REAL DE LA PÁGINA */
+.imagextendida {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    right: 0;
+}
+
+.imagextendida img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ELIMINAR CUALQUIER PADDING/MARGEN DEL BODY Y HTML */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Previene scroll horizontal */
+}
+
+/* ASEGURAR QUE EL MAIN NO TENGA RESTRICCIONES */
+.main-content-scroll {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1200px) {
+    .left-column .taller-title {
+        font-size: 80pt;
+    }
+    
+    .left-column .taller-subtitle,
+    .left-column .taller-description p,
+    .right-column .info-item h3,
+    .right-column .info-item p,
+    .right-column .info-item li {
+        font-size: 22pt;
+    }
+    
+    .right-column {
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-columns {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .right-column {
+        flex: none;
+        width: 100%;
+        margin-right: 0;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    
+    .left-column {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        max-width: none;
+    }
+    
+    .left-column .taller-title {
+        font-size: 60pt;
+        text-align: center;
+    }
+    
+    .left-column .taller-subtitle {
+        font-size: 20pt;
+        text-align: center;
+    }
+    
+    .left-column .taller-description p,
+    .right-column .info-item h3,
+    .right-column .info-item p,
+    .right-column .info-item li {
+        font-size: 18pt;
+    }
+    
+    .content-scroll-section {
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-column .taller-title {
+        font-size: 40pt;
+    }
+    
+    .left-column .taller-subtitle {
+        font-size: 18pt;
+    }
+    
+    .left-column .taller-description p,
+    .right-column .info-item h3,
+    .right-column .info-item p,
+    .right-column .info-item li {
+        font-size: 16pt;
+    }
+    
+    .right-column {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
     }
 }

@@ -6,7 +6,7 @@
     <title>Testimonios</title>
     
     <!-- favicon -->
-    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="./img/clogo.svg">
     
     <!-- Metadatos del sitio y página -->
     <meta name="title" content="Testimonios">
@@ -14,18 +14,19 @@
     
     <!-- Twitter Card -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Reconecta">
+    <meta property="twitter:title" content="Testimonios">
     <meta property="twitter:description" content="reconoce, reconecta, restaura">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Testimonios">
     <meta property="og:description" content="reconoce, reconecta, restaura">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="reconoce, reconecta, restaura">
+    <meta property="og:site_name" content="Cuerpo vivo">
 
     <!-- Tipografías ORIGINALES MANTENIDAS -->
     <link rel="stylesheet" href="https://use.typekit.net/nrh7dru.css">
-    <link rel="stylesheet" href="https://use.typekit.net/nrh7dru.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
     
     <!-- Font Awesome: Iconos -->
@@ -72,49 +73,34 @@
 
     <main class="container">
         <header class="hero">
-            <h1 class="stroke-white"> Reconecta </h1>
-            <p> Donde cuerpo, diálogo y creatividad se unen para transformar tus espacios cotidianos <br>Cuerpo vivo - Reconecta</p>
-        </header>
-
-        <section class="row"> 
-            <header class="columns twelve">
-                <p> <br> Es un taller experiencial que integra movimiento consciente, diálogo grupal y creatividad corporal para transformar activamente tu relación con los espacios de trabajo y estudio. A través de secuencias somáticas guiadas, ejercicios de re-dibujo espacial y dinámicas de co-creación, explorarás cómo reconfigurar físicamente tus entornos cotidianos. El taller te invita a identificar nuevos recorridos corporales, diseñar micro-rituales de transición y generar propuestas concretas para habitar tus espacios desde una perspectiva más orgánica y consciente, integrando los hallazgos individuales en una reflexión colectiva que enriquece el proceso de resignificación de lo cotidiano. </p>
-            </header>
+            <!-- Imagen centrada arriba del título -->
+            <div class="hero-image-container">
+                <img src="./img/test.jpg">
+                <h1 class="cv">Testimonios</h1>
             </div>
-        </section>
-        <div class="row">
-            <article class="six columns card">
-                <header>
-                    <h3>Exploración somática consciente</h3>
-                    <p> Iniciando con una secuencia progresiva de respiración profunda y movimientos orgánicos que permiten identificar cómo la arquitectura de tus espacios ha moldeado tu postura y gestualidad. A través de ejercicios de liberación miofascial y exploración de rangos de movimiento, reconocerás patrones de tensión acumulada y descubrirás nuevas posibilidades corporales.</p>
-                </header>
-            </article>
-
-            <article class="six columns card">
-                <header>
-                    <h3>Cartografía creativa del espacio</h3>
-                    <p> Mediante técnicas de dibujo sensorial y mapeo corporal, transformarás tu percepción del espacio en un plano vivo que revela las relaciones entre tu cuerpo y el entorno. Identificarás zonas de congestión energética, rutinas de movimiento establecidas y oportunidades para rediseñar tus recorridos cotidianos.</p>
-                </header>
-            </article>
+    </main>
+    
+     <!-- Sección de imágenes grandes -->
+    <section class="galeria-imagenes">
+        <div class="imagen-full espacios">
+            <img src="./img/esp.svg" alt="Espacios">
         </div>
-
-        <div class="row">
-            <article class="six columns card">
-                <header>
-                    <h3>Diálogo grupal reflexivo</h3>
-                    <p>En círculos de conversación facilitados, compartirás hallazgos con otras personas que enfrentan desafíos similares en sus espacios laborales/educativos. Este intercambio permitirá identificar patrones colectivos, co-crear soluciones innovadoras y construir un repertorio compartido de estrategias corporo-espaciales.</p>
-                </header>
-            </article>
-
-            <article class="six columns card">
-                <header>
-                    <h3>Diseño de micro-rituales corporales</h3>
-                    <p> Co-diseñarás prácticas accesibles para integrar en tu rutina diaria: secuencias breves de movimiento para transiciones entre actividades, ejercicios respiratorios para pausas regenerativas y reconfiguraciones espaciales sencillas que promuevan el bienestar corporal durante tu jornada.</p>
-                </header>
-            </article>
+        <div class="imagen-full planos">
+            <img src="./img/planos.svg" alt="Planos">
+        </div>
+        <div class="imagen-full acetat">
+            <img src="./img/acetat.svg" alt="Acetato">
+        </div>
+        <div class="imagen-full tar1">
+            <img src="./img/tar1.svg" alt="Tarjeta 1">
+        </div>
+        <div class="imagen-full tar2">
+            <img src="./img/tar2.svg" alt="Tarjeta 2">
+        </div>
+        <div class="imagen-full tar3">
+            <img src="./img/tar3.svg" alt="Tarjeta 3">
         </div>
     </section>
-    </main>
 
     <footer id="main-footer">
         <div class="footer-content container">
@@ -129,10 +115,10 @@
             
             <div class="footer-right">
                 <p class="footer-title">MATERIAL</p>
-                <a href="./docs/bitacora.pdf" download class="footer-link">Descargar bitácora</a>
+                <a href="./cuerpo-vivo/bitataller.pdf" download class="footer-link">Descargar bitácora</a>
             </div>
         </div>
     </footer>
-    
+
 </body>
 </html>
