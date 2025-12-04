@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="es-MX">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reconoce</title>
-    
+
     <!-- favicon -->
-    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
-    
+    <link rel="icon" type="image/svg+xml" href="./img/clogo.svg">
+
     <!-- Metadatos del sitio y página -->
     <meta name="title" content="Reconoce">
     <meta name="description" content="reconoce, reconecta, restaura">
-    
+
     <!-- Twitter Card -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Reconoce">
@@ -25,40 +26,34 @@
 
     <!-- Tipografías ORIGINALES MANTENIDAS -->
     <link rel="stylesheet" href="https://use.typekit.net/nrh7dru.css">
-    <link rel="stylesheet" href="https://use.typekit.net/nrh7dru.css">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome: Iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/scroll-bar.css">
-    
-    <!-- CodeMirror (RunMode para resaltar <pre><code>) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/monokai.min.css">
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/runmode/runmode.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/css/css.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/xml/xml.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/javascript/javascript.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/htmlmixed/htmlmixed.min.js" defer></script>
+
 </head>
 
 <body class="bg-pattern-dots pagina-reconoce">
-    <!-- HEADER FIJO -->
+    <!-- HEADER -->
     <header id="main-header">
         <nav>
-            <a class="nav-link inicio" href="index.html">INICIO</a>
-            <a class="nav-link cv" href="cuerpovivo.html">CUERPO VIVO</a>
-            <a class="nav-link logo" href="index.html">
-                <img src="./img/clogo.svg" alt="Logo" width="70" height="70">
+            <!-- Rutas corregidas -->
+            <a class="nav-link inicio" href="index.html" title="Inicio">
+                <span class="nav-text">INICIO</span>
             </a>
-            <a class="nav-link testimonios" href="testimonios.html">TESTIMONIOS</a>
-            <a class="nav-link documental" href="documental.html">DOCUMENTAL</a>
+            <a class="nav-link cv" href="cuerpovivo.html" title="CUERPO VIVO">
+                <span class="nav-text">CUERPO VIVO</span>
+            </a>
+            <a class="nav-link logo" href="index.html" title="logo">
+                <img src="./img/clogo.svg" alt="Logotipo" width="70" height="70">
+            </a>
+            <a class="nav-link testimonios" href="testimonios.html" title="testimonios">
+                <span class="nav-text">TESTIMONIOS</span>
+            </a>
+            <a class="nav-link documental" href="documental.html" title="documental">
+                <span class="nav-text">DOCUMENTAL</span>
+            </a>
         </nav>
     </header>
 
@@ -71,82 +66,233 @@
             <img src="./img/rec_logo.svg" alt="Reconoce" class="hero-logo-main">
         </div>
     </section>
-            
-        <!-- CONTENIDO QUE SE MUEVE CON SCROLL -->
-        <main class="main-content-scroll">
-            <div class="container content-scroll-section">
-                <div class="content-columns">
-                    <!-- COLUMNA IZQUIERDA - TALLER Y DESCRIPCIÓN -->
-                    <div class="left-column">
-                        <h1 class="taller-title">TALLER 1</h1>
-                        <h2 class="taller-subtitle">"Mapear el cuerpo en el espacio"</h2>
-                        
-                        <div class="taller-description">
-                            <p>En el primer taller "Reconoce", los participantes exploraron la relación entre su cuerpo y su espacio de trabajo/estudio. A través de movimientos conscientes y ejercicios de respiración, identificaron tensiones físicas acumuladas. La actividad central consistió en dibujar un plano sensorial de sus espacios, donde registraron no solo los objetos, sino también cómo cada zona afecta su cuerpo: donde sienten incomodidad, donde encuentran alivio y que gestos repiten sin darse cuenta. Los resultados mostraron patrones comunes: dolor lumbar, hombros tensionados y la necesidad consciente de crear pequeños espacios de fuga dentro de entornos productivos.</p>
-                        </div>
+
+    <!-- CONTENIDO QUE SE MUEVE CON SCROLL -->
+    <main class="main-content-scroll">
+        <div class="content-scroll-section">
+            <div class="row">
+                <!-- COLUMNA IZQUIERDA - TALLER Y DESCRIPCIÓN -->
+                <div class="columns nine">
+                    <h1 class="taller-title">TALLER 1</h1>
+                    <h2 class="taller-subtitle">"Mapear el cuerpo en el espacio"</h2>
+
+                    <div class="taller-description">
+                        <p>En el primer taller "Reconoce", los participantes exploraron la relación entre su cuerpo y su
+                            espacio de trabajo/estudio. A través de movimientos conscientes y ejercicios de respiración,
+                            identificaron tensiones físicas acumuladas. La actividad central consistió en dibujar un
+                            plano sensorial de sus espacios, donde registraron no solo los objetos, sino también cómo
+                            cada zona afecta su cuerpo: dónde sienten incomodidad, dónde encuentran alivio y qué gestos
+                            repiten sin darse cuenta. Los resultados mostraron patrones comunes: dolor lumbar, hombros
+                            tensionados y la necesidad consciente de crear pequeños espacios de fuga dentro de entornos
+                            productivos.</p>
                     </div>
-    
-                    <!-- COLUMNA DERECHA - INFORMACIÓN DEL TALLER -->
-                    <div class="right-column">
-                        <div class="info-section">
-                            <div class="info-item">
-                                <h3>DURACIÓN:</h3>
-                                <p>1 hora 30 minutos</p>
-                            </div>
-                            
-                            <div class="info-item">
-                                <h3>OBJETIVO:</h3>
-                                <p>Tomar conciencia del cuerpo y del espacio de trabajo/estudio, identificando sensaciones y patrones de movimiento.</p>
-                            </div>
-                            
-                            <div class="info-item">
-                                <h3>MATERIALES:</h3>
-                                <ul>
-                                    <li>Papel craft</li>
-                                    <li>Crayones</li>
-                                    <li>Calcomanías circulares</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="info-item">
-                                <h3>ESTRUCTURA:</h3>
-                                <ol>
-                                    <li>Presentación inicial (10 min)</li>
-                                    <li>Ejercicios de respiración (5 min)</li>
-                                    <li>Movimiento somático (20 min)</li>
-                                    <li>Actividad: Mapeo del espacio (30 min)</li>
-                                    <li>Meditación de cierre (5 min)</li>
-                                    <li>Entrega de bitácoras</li>
-                                </ol>
-                            </div>
+                </div>
+
+                <!-- COLUMNA DERECHA - INFORMACIÓN DEL TALLER -->
+                <div class="columns three">
+                    <div class="info-section">
+                        <div class="info-item">
+                            <h3>DURACIÓN:</h3>
+                            <p>1 hora 30 minutos</p>
+                        </div>
+
+                        <div class="info-item">
+                            <h3>OBJETIVO:</h3>
+                            <p>Tomar conciencia del cuerpo y del espacio de trabajo/estudio, identificando sensaciones y
+                                patrones de movimiento.</p>
+                        </div>
+
+                        <div class="info-item">
+                            <h3>MATERIALES:</h3>
+                            <ul>
+                                <li>Papel craft</li>
+                                <li>Crayones</li>
+                                <li>Calcomanías circulares</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-item">
+                            <h3>ESTRUCTURA:</h3>
+                            <ol>
+                                <li>Presentación inicial (10 min)</li>
+                                <li>Ejercicios de respiración (5 min)</li>
+                                <li>Movimiento somático (20 min)</li>
+                                <li>Actividad: Mapeo del espacio (30 min)</li>
+                                <li>Meditación de cierre (5 min)</li>
+                                <li>Entrega de bitácoras</li>
+                            </ol>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
-
-        <div class="imagextendida">
-            <img src="./img/ext_1.svg" alt="ext1">
         </div>
+
+        <div class="imagenextendida">
+            <img src="./img/ext_1.jpg" alt="ext1">
+        </div>
+    
+            <ol class="lista-principal">
+                <li>
+                    <h3 class="titulo-lista">PRESENTACIÓN INICIAL (10 MIN)</h3>
+                    <ul class="sub-lista">
+                        <li>Breve introducción al taller y a los participantes.</li>
+                    </ul>
+                </li>
+            </ol>
+        
+      <div class="row">
+        <div class="columns four">
+            <div class="reconoceuno">
+                <img src="./img/r1.jpg" alt="reconoceuno">
+            </div>
+        </div>
+        <div class="columns eight lista-detallada">
+            <div class="description">
+                <ul class="lista-principal">
+                    <li>
+                        <h3 class="titulo-lista">2. EJERCICIOS DE RESPIRACIÓN (5 MIN)</h3>
+                        <ul class="sub-lista">
+                            <li>Postura de meditación.</li>
+                            <li>Respiración cuadrada: inhala 4, exhala 4 (8 repeticiones).</li>
+                            <li>Inhala 4, exhala 6 (8 repeticiones).</li>
+                            <li>Inhala y exhala emitiendo un sonido "aaaaah" (8 repeticiones).</li>
+                            <li>Inhala y exhala con vibración en la garganta "mmmmhh" (8 repeticiones).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>  
+
+      <div class="row">
+        <ul class="lista-secundaria columns eight movimiento-somatico">
+            <li>
+                <h3 class="titulo-lista">3. MOVIMIENTO SOMÁTICO (20 MIN)</h3>
+                <ul class="sub-lista">
+                    <li>Llevar la cabeza hacia abajo, sentir el peso.</li>
+                    <li>Llevar la barbilla a la derecha y luego a la izquierda, sintiendo el estiramiento.</li>
+                    <li>Masajear el cuero cabelludo (2 min).</li>
+                    <li>Dedos de "amor y paz" en las orejas, mover manos arriba y abajo (1 min).</li>
+                    <li>Masajear lóbulos de las orejas (1 min).</li>
+                    <li>Frotar palmas sobre las orejas en círculos (1 min).</li>
+                    <li>Elevar hombros al inhalar, soltar al exhalar (varias repeticiones).</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="columns four">
+            <div class="reconoceund">
+                <img src="./img/r2.jpg" alt="reconocedos">
+            </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="columns four">
+            <div class="reconoceuno">
+                <img src="./img/r3.jpg" alt="reconocetres">
+            </div>
+        </div>
+        <div class="columns eight lista-detallada">
+            <div class="description">
+                <ul class="lista-principal">
+                    <li>
+                        <ul class="sub-lista">
+                            <li> Manos en mariposa en el pecho, alternar palmas al inhalar y exhalar (1 min).</li>
+                            <li> Frotar palmas y hacer círculos en el pecho (1 min).</li>
+                            <li> Tocarse y apretar brazos desde dedos hasta hombros (2 min).</li>
+                            <li> Golpes suaves en el pecho y estómago (1 min cada uno).</li>
+                            <li> Observar cambios en el cuerpo.</li>
+                            <li> De pie, notar diferencias entre tronco superior e inferior.</li>
+                            <li> Transferir peso de un pie a otro, explorar sensaciones.</li>
+                            <li> Sacudir todo el cuerpo, comenzando por los pies y subiendo hasta la cabeza. </li>
+                            <li> Frenar y observar.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>  
+
+      <div class="row">
+        <ul class="lista-secundaria columns eight movimiento-somatico">
+            <li>
+                <h3 class="titulo-lista"> 4. ACTIVIDAD: MAPEO DEL CUERPO EN EL ESPACIO (30 MIN)</h3>
+                <ul class="sub-lista">
+                    <li> Dibujar un plano cenital del espacio de trabajo en papel craft. </li>
+                    <li> Trazar la silueta del cuerpo en el plano. </li>
+                    <li> Reflexionar: ¿Cómo te sientes en este espacio? (color, forma, tamaño) </li>
+                    <li> Marcar con calcomanías circulares los recorridos habituales.</li>
+                    <li> Caminar y observar los mapas de los demás, conversar </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="columns four">
+            <div class="reconoceuno">
+                <img src="./img/r4.jpg" alt="reconocecuatro ">
+            </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="columns four">
+            <div class="reconoceuno">
+                <img src="./img/r5.jpg" alt="reconocecinco">
+            </div>
+        </div>
+        <div class="columns eight lista-detallada">
+            <div class="description">
+                <ul class="lista-principal">
+                    <li>
+                        <h3 class="titulo-lista"> 5. CONVERSACIÓN CIERRE (5 MIN)</h3>
+                        <ul class="sub-lista">
+                            <li> Plática grupal para integrar la experiencia. </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div> 
+
+
+      <div class="row">
+        <ul class="lista-secundaria columns eight movimiento-somatico">
+            <li>
+                <h3 class="titulo-lista"> 6. ENTREGA DE BITÁCORAS</h3>
+                <ul class="sub-lista">
+                    <li> Entregar bitácoras para que los participantes registren sus reflexiones </li>
+                    <li> ( Descargar desde el footer ) </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="columns four">
+                <img src="./img/r6.jpg" alt="reconoceseis ">
+        </div>
+      </div>
+
+
+    </main>
+
 
     <!-- FOOTER -->
     <footer id="main-footer">
         <div class="footer-content container">
             <div class="footer-left">
                 <p class="footer-title">CONTACTO</p>
-                <p class="footer-info">ana.moran2002@gmail.com</p>
+                <a href="mailto:ana.moran2002@gmail.com" title="Escribeme a mi mail" class="footer-info">ana.moran2002@gmail.com</a>
             </div>
-            
+
             <div class="footer-center">
                 <img src="./img/clogo.svg" alt="Logotipo" class="footer-logo">
             </div>
-            
+
             <div class="footer-right">
                 <p class="footer-title">MATERIAL</p>
-                <a href="./docs/bitacora.pdf" download class="footer-link">Descargar bitácora</a>
+                <a href="./bitataller.pdf" target="blank" download class="footer-link">Descargar bitácora</a>
             </div>
         </div>
     </footer>
-    
+
 </body>
+
 </html>

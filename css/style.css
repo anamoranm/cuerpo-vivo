@@ -81,6 +81,7 @@ code {
 img {
     max-width: 100%;
     height: auto;
+    width: 100%;
 }
 
 /* layout */
@@ -114,6 +115,7 @@ header#main-header nav {
 .cv {
     font-size: 70px;
     font-family:"filosofia-grand-all-small-ca", serif;
+    font-weight: normal;
 }
 
 /* HERO IMAGE CONTAINER CORREGIDO - solo una regla */
@@ -136,10 +138,12 @@ header#main-header nav {
 .introtext {
     font-family: "minion-pro", serif;
     font-size: 15px;
-    line-height: 1.6;
+    line-height: 1.8;
     margin-bottom: 1.5rem;
     display: block;
 }
+
+
 
 header#main-header nav a.nav-link,
 header#main-header nav a.nav-link:link,
@@ -477,6 +481,7 @@ section h4 {
     margin: 50px auto;
     padding: 0 20px;
     gap: 40px;
+    margin-top: 100px;
 }
 
 .imagen-izquierda, .imagen-derecha {
@@ -490,6 +495,14 @@ section h4 {
     display: block;
 }
 
+.imagen-izquierda img {
+    margin-bottom: 80px;
+}
+
+.imagen-derecha img {
+    margin-bottom: 80px;
+}
+
 .contenido-central {
     flex: 1;
     max-width: 800px;
@@ -497,11 +510,10 @@ section h4 {
 
 .titulo-principal {
     font-family: "filosofia-grand-all-small-ca", serif;
-    font-size: 48px;
+    font-size: 50px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-weight: normal;
-    line-height: 1.2;
 }
 
 .subtitulo-principal {
@@ -510,7 +522,6 @@ section h4 {
     text-align: center;
     margin-bottom: 40px;
     font-weight: normal;
-    line-height: 1.3;
 }
 
 .parrafos {
@@ -538,7 +549,7 @@ body.pagina-reconoce {
 
 /* HEADER COMPLETAMENTE FIJO */
 body.pagina-reconoce #main-header {
-    position: fixed !important;
+    position: absolute !important;
     top: 0 !important;
     left: 0 !important;
     width: 100% !important;
@@ -690,10 +701,6 @@ body.pagina-reconoce #main-header nav a.nav-link {
 
 /* ===== COLUMNA DERECHA - INFORMACIÓN DEL TALLER ===== */
 
-.right-column .info-section {
-    max-width: none;
-    margin: 0;
-}
 
 .right-column .info-item {
     margin-bottom: 3rem;
@@ -751,17 +758,15 @@ body.pagina-reconoce #main-header nav a.nav-link {
 }
 
 /* IMAGEN EXTENDIDA - OCUPA TODO EL ANCHO REAL DE LA PÁGINA */
-.imagextendida {
+.imagenextendida {
     width: 100vw;
     margin: 0;
     padding: 0;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     right: 0;
 }
 
-.imagextendida img {
+.imagenextendida img {
     width: 100%;
     height: auto;
     display: block;
@@ -777,7 +782,7 @@ html, body {
 /* ASEGURAR QUE EL MAIN NO TENGA RESTRICCIONES */
 .main-content-scroll {
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -862,3 +867,498 @@ html, body {
         padding-left: 1.5rem;
     }
 }
+
+
+.taller-title {
+    font-size: 50pt;
+    font-weight: normal;
+    margin-left: 60px;
+}
+
+.taller-subtitle {
+    font-size: 30pt;
+    font-weight: normal;
+    margin-left: 60px;
+}
+
+.taller-description {
+    font-size: 13pt;
+    font-weight: normal;
+    margin-left: 60px;
+}
+
+.info-section {
+    margin-left: 100px;
+}
+/* ===== ESTILOS ESPECÍFICOS PARA LA LISTA COMO TABLA ===== */
+
+/* Contenedor de la columna derecha - pegada al borde derecho */
+.columns.three {
+    position: relative;
+    right: 0;
+    width: 400px;
+    margin: 0;
+}
+
+/* Cada ítem de información */
+.columns.three .info-item {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.columns.three .info-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Títulos en mayúsculas y compactos */
+.columns.three .info-item h3 {
+    font-family: "filosofia-grand-all-small-ca", serif;
+    font-weight: normal;
+    font-size: 18pt;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+/* Texto normal - compacto y alineado */
+.columns.three .info-item p {
+    font-size: 12pt;
+    margin: 0;
+    color: #f0f0f0;
+    line-height: 1.3;
+    font-weight: normal;
+    text-align: left;
+}
+
+/* Listas como tabla - sin viñetas y compactas */
+.columns.three .info-item ul,
+.columns.three .info-item ol {
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+    color: #f0f0f0;
+}
+
+.columns.three .info-item li {
+    font-size: 12pt;
+    margin-bottom: 0.4rem;
+    line-height: 1.3;
+    font-weight: normal;
+    list-style-position: inside;
+}
+
+/* Viñetas personalizadas para lista no ordenada */
+.columns.three .info-item ul li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.columns.three .info-item ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+}
+
+/* Lista ordenada - números más compactos */
+.columns.three .info-item ol {
+    counter-reset: item;
+    list-style-type: none;
+}
+
+.columns.three .info-item ol li {
+    counter-increment: item;
+    position: relative;
+    padding-left: 1.8rem;
+}
+
+.columns.three .info-item ol li:before {
+    content: counter(item) ".";
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+/* Ajustar el row para espacio adecuado */
+.row {
+    margin-right: 0 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Columna izquierda más ancha */
+.columns.nine {
+    flex: 1;
+    max-width: 800px;
+    margin-right: 40px;
+    margin-top: 200px;
+}
+
+/* Ajustes responsive */
+@media (max-width: 1200px) {
+    .row {
+        margin-left: 50px;
+        margin-top: 200px;
+    }
+    
+    .columns.three {
+        margin-right: 50px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 150px;
+    }
+    
+    .columns.nine {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+    
+    .columns.three {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .row {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 120px;
+    }
+}
+
+/* ===== ESTILOS PARA LA LISTA DETALLADA - SIN LÍNEA BLANCA ===== */
+
+.lista-detallada {
+    background: #ada89a;
+    padding: 5rem 0;
+    margin: 0;
+    color: #ffffff;
+}
+
+.lista-detallada .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lista-detallada .row {
+    margin: 0;
+    display: block;
+}
+
+/* Lista principal - números grandes */
+.lista-principal {
+    counter-reset: item;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-principal > li {
+    counter-increment: item;
+    margin-bottom: 3.5rem;
+    position: relative;
+    padding-left: 4rem;
+}
+
+.lista-principal > li:last-child {
+    margin-bottom: 0;
+}
+
+/* Números grandes */
+.lista-principal > li:before {
+    content: counter(item) ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: "filosofia-grand-all-small-ca", serif;
+    font-size: 40pt;
+    font-weight: normal;
+    color: #ffffff;
+    line-height: 1;
+}
+
+/* Títulos de cada ítem - SIN BORDE INFERIOR */
+.titulo-lista {
+    font-family: "filosofia-grand-all-small-ca", serif;
+    font-weight: normal;
+    font-size: 18pt;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    border-bottom: none !important; /* Elimina cualquier línea blanca */
+    padding-bottom: 0;
+}
+
+/* Contenido del ítem - párrafos sin viñetas */
+.contenido-item {
+    margin: 0;
+    padding: 0;
+}
+
+.contenido-item p {
+    font-family: "minion-pro", serif;
+    font-size: 13pt;
+    line-height: 1.4;
+    color: #f0f0f0;
+    margin-bottom: 0.6rem;
+    position: relative;
+    padding-left: 0; /* Sin sangría */
+}
+
+.contenido-item p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .lista-detallada {
+        padding: 3rem 0;
+    }
+    
+    .lista-principal > li {
+        padding-left: 3rem;
+    }
+    
+    .lista-principal > li:before {
+        font-size: 30pt;
+    }
+    
+    .titulo-lista {
+        font-size: 16pt;
+    }
+    
+    .contenido-item p {
+        font-size: 12pt;
+    }
+}
+
+@media (max-width: 480px) {
+    .lista-detallada {
+        padding: 2rem 0;
+    }
+    
+    .lista-principal > li {
+        padding-left: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .lista-principal > li:before {
+        font-size: 24pt;
+    }
+    
+    .titulo-lista {
+        font-size: 14pt;
+    }
+    
+    .contenido-item p {
+        font-size: 11pt;
+    }
+}
+
+.lista-principal {
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.titulo-lista {
+    font-size: 30pt;
+}
+
+.sub-lista {
+    font-size: 14pt;
+}
+
+.columns.one .reconoceuno img {
+    width: 700% !important;
+    max-width: 1000px !important;
+}
+
+
+
+/* ===== PEGAR LISTA HACIA EL LADO DERECHO ===== */
+
+/* Contenedor principal de la lista detallada */
+.lista-detallada .container {
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: 100px !important;
+    padding: 0 !important;
+    width: 800px !important;
+}
+
+/* Ajustar la columna eleven para que esté a la derecha */
+.columns.eleven {
+    width: 800px !important;
+    margin-left: auto !important;
+    margin-right: 100px !important;
+    padding: 0 !important;
+}
+
+/* Alinear todo el contenido a la derecha */
+.lista-detallada .description {
+    text-align: left !important;
+    margin-left: 300px;
+    margin-right: 0 !important;
+    width: 100% !important;
+}
+
+/* Ajustar la lista principal para que esté a la derecha */
+.lista-detallada .lista-principal {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 4rem !important; /* Para los números */
+    text-align: left !important;
+}
+
+/* Ajustar los números para que estén a la derecha */
+.lista-detallada .lista-principal > li {
+    padding-left: 0 !important;
+    padding-right: 4rem !important;
+    text-align: left !important;
+}
+
+.lista-detallada .lista-principal > li:before {
+    left: auto !important;
+    right: 0 !important;
+}
+
+/* Ajustar los títulos y subtítulos */
+.lista-detallada .titulo-lista {
+    text-align: left !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+/* Ajustar la sub-lista para que esté a la derecha */
+.lista-detallada .sub-lista {
+    text-align: left!important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 1rem !important;
+}
+
+/* Ajustar las viñetas para que estén a la derecha */
+.lista-detallada .sub-lista li {
+    padding-left: 0 !important;
+    padding-right: 1.5rem !important;
+    text-align: left !important;
+}
+
+.lista-detallada .sub-lista li:before {
+    left: auto !important;
+    right: 0 !important;
+}
+
+/* ===== QUITAR EL NÚMERO AUTOMÁTICO "1." DE EJERCICIOS DE RESPIRACIÓN ===== */
+
+/* SELECTOR ESPECÍFICO PARA LA LISTA DENTRO DE .lista-detallada */
+.lista-detallada .lista-principal > li::before {
+    content: "" !important;
+    display: none !important;
+}
+
+/* También quitar el contador para esa lista específica */
+.lista-detallada .lista-principal {
+    counter-reset: none !important;
+}
+
+/* Asegurar que no haya padding para números en esa lista */
+.lista-detallada .lista-principal > li {
+    padding-left: 0 !important;
+    margin-left:!important;
+}
+
+/* QUITAR MARCADORES DE LA LISTA SECUNDARIA */
+ul.lista-secundaria {
+    list-style: none !important;
+    padding-left: 0 !important;
+}
+
+ul.lista-secundaria li::marker {
+    content: "" !important;
+    display: none !important;
+}
+
+/* También para el li dentro de la lista secundaria */
+ul.lista-secundaria > li {
+    list-style-type: none !important;
+}
+
+/* ===== BULLET POINTS MOVIMIENTO SOMÁTICO ===== */
+
+.row .movimiento-somatico .sub-lista {
+    list-style: none !important;
+    margin-left: 100px !important; /* Reducir padding */
+    margin: 10px 0 15px 0 !important;
+}
+
+.row .movimiento-somatico .sub-lista li {
+    position: relative;
+    padding-left: 20px; /* Reducir espacio para el bullet */
+    margin-bottom: 8px;
+    font-size: 14pt;
+    line-height: 1.4;
+    color: #f0f0f0;
+    min-height: 22px; /* Altura mínima para alineación */
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+}
+
+/* Círculos huecos MÁS PEQUEÑOS */
+.row .movimiento-somatico .sub-lista li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 6px;  /* MÁS PEQUEÑO: era 6px */
+    height: 6px; /* MÁS PEQUEÑO: era 6px */
+    border: .5px solid #ffffff; /* Grosor del trazo */
+    border-radius: 50%;
+    background-color: transparent !important;
+    box-sizing: border-box;
+    /* Centrar verticalmente respecto al texto */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Para alinear mejor con el texto */
+.row .movimiento-somatico .sub-lista li {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+/* ===== MARGEN PARA TODA LA SECCIÓN MOVIMIENTO SOMÁTICO ===== */
+
+ul.lista-secundaria.movimiento-somatico {
+    margin-left: 80px !important; 
+    margin-top: 80px !important;/* Ajusta este valor según necesites */
+    position: relative;
+    left: 0;
+}
+
+/* Para que los bullet points también se muevan con todo */
+.row .movimiento-somatico .sub-lista {
+    margin-left: 0 !important; /* Quitamos cualquier margin-left previo */
+}
+
